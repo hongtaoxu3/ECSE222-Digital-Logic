@@ -1,0 +1,300 @@
+[2020-12-11 11:31:02 EST] precision -shell -file run.do -fileargs "sequence_counter.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@dd3b002785c9 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Fri Dec 11 11:31:03 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/sequence_counter.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/sequence_counter.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/sequence_counter.vhd" ...
+# Warning: [43020]: "/home/runner/sequence_counter.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Info: [669]: Top module of the design is set to: sequence_counter.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.sequence_counter(description): Pre-processing...
+# Info: [45143]: "/home/runner/design.vhd", line 16: Enumerated type state with 5 elements encoded as onehot.
+# Info: [45144]: Encodings for state values.
+# Info: [40000]: value                              	                         state[4-0]
+# Info: [40000]: st_one_a                           	                         00001
+# Info: [40000]: st_one_b                           	                         00010
+# Info: [40000]: st_one_c                           	                         00100
+# Info: [40000]: st_one_d                           	                         01000
+# Info: [40000]: st_one_e                           	                         10000
+# Info: [45143]: "/home/runner/design.vhd", line 23: Enumerated type statetwo with 5 elements encoded as onehot.
+# Info: [45144]: Encodings for statetwo values.
+# Info: [40000]: value                              	                      statetwo[4-0]
+# Info: [40000]: st_two_a                           	                         00001
+# Info: [40000]: st_two_b                           	                         00010
+# Info: [40000]: st_two_c                           	                         00100
+# Info: [40000]: st_two_d                           	                         01000
+# Info: [40000]: st_two_e                           	                         10000
+# Info: [45144]: Extracted FSM in module work.sequence_counter(description), with state variable = current_state_two[4:0], async set/reset state(s) = 00001 , number of states = 5.
+# Info: [45144]: Re-encoding 5 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	       st_two_a	                              00001	                         00001
+# Info: [40000]: FSM:	    1	       st_two_b	                              00010	                         00010
+# Info: [40000]: FSM:	    2	       st_two_c	                              00100	                         00100
+# Info: [40000]: FSM:	    3	       st_two_d	                              01000	                         01000
+# Info: [40000]: FSM:	    4	       st_two_e	                              10000	                         10000
+# Info: [45144]: Extracted FSM in module work.sequence_counter(description), with state variable = current_state_one[4:0], async set/reset state(s) = 00001 , number of states = 5.
+# Info: [45144]: Re-encoding 5 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	       st_one_a	                              00001	                         00001
+# Info: [40000]: FSM:	    1	       st_one_b	                              00010	                         00010
+# Info: [40000]: FSM:	    2	       st_one_c	                              00100	                         00100
+# Info: [40000]: FSM:	    3	       st_one_d	                              01000	                         01000
+# Info: [40000]: FSM:	    4	       st_one_e	                              10000	                         10000
+# Info: [44523]: Root Module work.sequence_counter(description): Compiling...
+# Info: [44838]: "/home/runner/design.vhd", line 165: Macro Add_Sub "M_RTLSIM_ADD_SUB_3" inferred for node "count_signal_one".
+# Info: [45205]: "/home/runner/design.vhd", line 182: Module work.sequence_counter(description), Net(s) cnt_1[2:0]: Latch inferred.
+# Info: [45205]: "/home/runner/design.vhd", line 184: Module work.sequence_counter(description), Net(s) cnt_2[2:0]: Latch inferred.
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 2, Inferred (Modgen/Selcounter/AddSub) : 1 (0 / 0 / 1), AcrossDH (Merged/Not-Merged) : (0 / 1), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+# Info: [44856]: Total lines of RTL compiled: 180.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.sequence_counter.description
+# Info: [15002]: Optimizing design view:.work.sequence_counter.description
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /home/runner/impl_1/sequence_counter.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/sequence_counter.xdc.
+# Info: -- Writing file /home/runner/impl_1/sequence_counter.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/sequence_counter.v.
+# Info: -- Writing file /home/runner/impl_1/sequence_counter.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 1.6 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.6 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/sequence_counter.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: -----------------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/sequence_counter_area.rep
+# Info: 1               /home/runner/impl_1/sequence_counter_con_rep.sdc
+# Info: 2               /home/runner/impl_1/sequence_counter_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/sequence_counter_fsm.rep
+# Info: 4               /home/runner/impl_1/sequence_counter_env.htm
+# Info: 5               /home/runner/impl_1/sequence_counter.edf
+# Info: 6               /home/runner/impl_1/sequence_counter.v
+# Info: 7               /home/runner/impl_1/sequence_counter.xdc
+# Info: 8               /home/runner/impl_1/sequence_counter.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               10      210       4.76%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              15      63400     0.02%
+# Info: CLB Slices                        2       15850     0.01%
+# Info: Dffs or Latches                   14      126800    0.01%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: **********************************************************************
+# Info: Library: work    Cell: sequence_counter    View: description
+# Info: **********************************************************************
+# Info:  Number of ports :                           10
+# Info:  Number of nets :                            45
+# Info:  Number of instances :                       41
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                 14
+# Info:  Number of LUTs :                            15
+# Info:  Number of LUTs with LUTNM/HLUTNM :          12
+# Info:  Number of accumulated instances :           41
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.sequence_counter.description
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | Port        | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | seq         | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | enable      | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | reset       | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | clk         | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | cnt_1(2)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | cnt_1(1)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | cnt_1(0)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | cnt_2(2)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | cnt_2(1)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | cnt_2(0)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell sequence_counter,
+# Info: // Fri Dec 11 11:31:16 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module sequence_counter ( seq, enable, reset, clk, cnt_1, cnt_2 ) ;
+# Info:     input seq ;
+# Info:     input enable ;
+# Info:     input reset ;
+# Info:     input clk ;
+# Info:     output [2:0]cnt_1 ;
+# Info:     output [2:0]cnt_2 ;
+# Info:     wire [2:0]cnt_1_1_0;
+# Info:     wire [2:0]cnt_2_1_0;
+# Info:     wire \current_state_two(4)  ;
+# Info:     wire \current_state_two(3)  , \current_state_two(2)  ,
+# Info:          \current_state_two(0)  ;
+# Info:     wire \current_state_one(4)  ;
+# Info:     wire \current_state_one(3)  , \current_state_one(2)  ,
+# Info:          \current_state_one(0)  , seq_int, enable_int, reset_int;
+# Info:     wire clk_int;
+# Info:     wire not_reset, \count_signal_two_6n2s1(0)  , nx17214z1, nx19208z1,
+# Info:          nx18211z1, nx12301z1, nx13298z1, nx3034z1, nx1040z1, nx43z1, nx64582z1,
+# Info:          nx35234z1, nx37228z1, nx38225z1, nx39222z1, nx3, nx4;
+# Info:     OBUF \cnt_2_obuf(0)  (.O (cnt_2[0]), .I (cnt_2_1_0[0])) ;
+# Info:     OBUF \cnt_2_obuf(1)  (.O (cnt_2[1]), .I (cnt_2_1_0[1])) ;
+# Info:     OBUF \cnt_2_obuf(2)  (.O (cnt_2[2]), .I (cnt_2_1_0[2])) ;
+# Info:     OBUF \cnt_1_obuf(0)  (.O (cnt_1[0]), .I (cnt_1_1_0[0])) ;
+# Info:     OBUF \cnt_1_obuf(1)  (.O (cnt_1[1]), .I (cnt_1_1_0[1])) ;
+# Info:     OBUF \cnt_1_obuf(2)  (.O (cnt_1[2]), .I (cnt_1_1_0[2])) ;
+# Info:     IBUF reset_ibuf (.O (reset_int), .I (reset)) ;
+# Info:     IBUF enable_ibuf (.O (enable_int), .I (enable)) ;
+# Info:     IBUF seq_ibuf (.O (seq_int), .I (seq)) ;
+# Info:     FDCE \reg_current_state_one(4)  (.Q (\current_state_one(4)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .CLR (not_reset), .D (nx39222z1)) ;
+# Info:     FDCE \reg_current_state_one(3)  (.Q (\current_state_one(3)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .CLR (not_reset), .D (nx38225z1)) ;
+# Info:     FDCE \reg_current_state_one(2)  (.Q (\current_state_one(2)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .CLR (not_reset), .D (nx37228z1)) ;
+# Info:     FDPE \reg_current_state_one(0)  (.Q (\current_state_one(0)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .D (nx35234z1), .PRE (not_reset)) ;
+# Info:     FDCE \reg_current_state_two(4)  (.Q (\current_state_two(4)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .CLR (not_reset), .D (nx64582z1)) ;
+# Info:     FDCE \reg_current_state_two(3)  (.Q (\current_state_two(3)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .CLR (not_reset), .D (nx43z1)) ;
+# Info:     FDCE \reg_current_state_two(2)  (.Q (\current_state_two(2)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .CLR (not_reset), .D (nx1040z1)) ;
+# Info:     FDPE \reg_current_state_two(0)  (.Q (\current_state_two(0)  ), .C (clk_int)
+# Info:          , .CE (enable_int), .D (nx3034z1), .PRE (not_reset)) ;
+# Info:     INV ix39222z1315 (.O (not_reset), .I (reset_int)) ;
+# Info:     INV ix11304z1315 (.O (\count_signal_two_6n2s1(0)  ), .I (cnt_2_1_0[0])) ;
+# Info:     INV ix17214z1315 (.O (nx17214z1), .I (cnt_1_1_0[0])) ;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT3 ix19208z1420 (.O (nx19208z1), .I0 (cnt_1_1_0[2]), .I1 (cnt_1_1_0[1]), .I2 (
+# Info:          cnt_1_1_0[0])) ;
+# Info:          defparam ix19208z1420.INIT = 8'h6A;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT2 ix18211z1320 (.O (nx18211z1), .I0 (cnt_1_1_0[1]), .I1 (cnt_1_1_0[0])) ;
+# Info:          defparam ix18211z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT2 ix12301z1320 (.O (nx12301z1), .I0 (cnt_2_1_0[1]), .I1 (cnt_2_1_0[0])) ;
+# Info:          defparam ix12301z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT3 ix13298z1420 (.O (nx13298z1), .I0 (cnt_2_1_0[2]), .I1 (cnt_2_1_0[1]), .I2 (
+# Info:          cnt_2_1_0[0])) ;
+# Info:          defparam ix13298z1420.INIT = 8'h6A;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT2 ix3034z1318 (.O (nx3034z1), .I0 (\current_state_two(2)  ), .I1 (seq_int
+# Info:          )) ;
+# Info:          defparam ix3034z1318.INIT = 4'h4;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT3 ix1040z1315 (.O (nx1040z1), .I0 (\current_state_two(3)  ), .I1 (
+# Info:          \current_state_two(0)  ), .I2 (seq_int)) ;
+# Info:          defparam ix1040z1315.INIT = 8'h01;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT2 ix43z1322 (.O (nx43z1), .I0 (\current_state_two(2)  ), .I1 (seq_int)) ;
+# Info:          defparam ix43z1322.INIT = 4'h8;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT2 ix64582z1316 (.O (nx64582z1), .I0 (\current_state_two(3)  ), .I1 (
+# Info:          seq_int)) ;
+# Info:          defparam ix64582z1316.INIT = 4'h2;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT3 ix35234z1328 (.O (nx35234z1), .I0 (\current_state_one(2)  ), .I1 (
+# Info:          \current_state_one(0)  ), .I2 (seq_int)) ;
+# Info:          defparam ix35234z1328.INIT = 8'h0E;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT3 ix37228z1315 (.O (nx37228z1), .I0 (\current_state_one(2)  ), .I1 (
+# Info:          \current_state_one(0)  ), .I2 (seq_int)) ;
+# Info:          defparam ix37228z1315.INIT = 8'h01;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT2 ix38225z1322 (.O (nx38225z1), .I0 (\current_state_one(2)  ), .I1 (
+# Info:          seq_int)) ;
+# Info:          defparam ix38225z1322.INIT = 4'h8;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT2 ix39222z1323 (.O (nx39222z1), .I0 (\current_state_one(3)  ), .I1 (
+# Info:          seq_int)) ;
+# Info:          defparam ix39222z1323.INIT = 4'h8;
+# Info:     BUFGP clk_ibuf (.O (clk_int), .I (clk)) ;
+# Info:     VCC \lat_count_signal_two(2)_I14_LD_PWR  (.P (nx3)) ;
+# Info:     GND \lat_count_signal_two(2)_I14_LD_GND  (.G (nx4)) ;
+# Info:     LDCE \lat_count_signal_two(2)  (.Q (cnt_2_1_0[2]), .CLR (nx4), .D (nx13298z1
+# Info:          ), .G (\current_state_two(4)  ), .GE (nx3)) ;
+# Info:     LDCE \lat_count_signal_two(1)  (.Q (cnt_2_1_0[1]), .CLR (nx4), .D (nx12301z1
+# Info:          ), .G (\current_state_two(4)  ), .GE (nx3)) ;
+# Info:     LDCE \lat_count_signal_two(0)  (.Q (cnt_2_1_0[0]), .CLR (nx4), .D (
+# Info:          \count_signal_two_6n2s1(0)  ), .G (\current_state_two(4)  ), .GE (nx3)
+# Info:          ) ;
+# Info:     LDCE \lat_cnt_1(0)  (.Q (cnt_1_1_0[0]), .CLR (nx4), .D (nx17214z1), .G (
+# Info:          \current_state_one(4)  ), .GE (nx3)) ;
+# Info:     LDCE \lat_cnt_1(1)  (.Q (cnt_1_1_0[1]), .CLR (nx4), .D (nx18211z1), .G (
+# Info:          \current_state_one(4)  ), .GE (nx3)) ;
+# Info:     LDCE \lat_cnt_1(2)  (.Q (cnt_1_1_0[2]), .CLR (nx4), .D (nx19208z1), .G (
+# Info:          \current_state_one(4)  ), .GE (nx3)) ;
+# Info: endmodule
+Done

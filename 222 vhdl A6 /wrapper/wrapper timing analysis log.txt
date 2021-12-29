@@ -1,0 +1,504 @@
+[2020-12-12 01:44:48 EST] precision -shell -file run.do -fileargs "wrapper.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@2ab01ab3e767 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Sat Dec 12 01:44:49 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/wrapper.vhd" ...
+# Info: [669]: Top module of the design is set to: wrapper.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.wrapper(description): Pre-processing...
+# Info: [45143]: "/home/runner/wrapper.vhd", line 287: Enumerated type state with 5 elements encoded as onehot.
+# Info: [45144]: Encodings for state values.
+# Info: [40000]: value                              	                         state[4-0]
+# Info: [40000]: st_one_a                           	                         00001
+# Info: [40000]: st_one_b                           	                         00010
+# Info: [40000]: st_one_c                           	                         00100
+# Info: [40000]: st_one_d                           	                         01000
+# Info: [40000]: st_one_e                           	                         10000
+# Info: [45143]: "/home/runner/wrapper.vhd", line 294: Enumerated type statetwo with 5 elements encoded as onehot.
+# Info: [45144]: Encodings for statetwo values.
+# Info: [40000]: value                              	                      statetwo[4-0]
+# Info: [40000]: st_two_a                           	                         00001
+# Info: [40000]: st_two_b                           	                         00010
+# Info: [40000]: st_two_c                           	                         00100
+# Info: [40000]: st_two_d                           	                         01000
+# Info: [40000]: st_two_e                           	                         10000
+# Info: [45144]: Extracted FSM in module work.wrapper(description), with state variable = current_state_two[4:0], async set/reset state(s) = 00001 , number of states = 5.
+# Info: [45144]: Re-encoding 5 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	       st_two_a	                              00001	                         00001
+# Info: [40000]: FSM:	    1	       st_two_b	                              00010	                         00010
+# Info: [40000]: FSM:	    2	       st_two_c	                              00100	                         00100
+# Info: [40000]: FSM:	    3	       st_two_d	                              01000	                         01000
+# Info: [40000]: FSM:	    4	       st_two_e	                              10000	                         10000
+# Info: [45144]: Extracted FSM in module work.wrapper(description), with state variable = current_state_one[4:0], async set/reset state(s) = 00001 , number of states = 5.
+# Info: [45144]: Re-encoding 5 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	       st_one_a	                              00001	                         00001
+# Info: [40000]: FSM:	    1	       st_one_b	                              00010	                         00010
+# Info: [40000]: FSM:	    2	       st_one_c	                              00100	                         00100
+# Info: [40000]: FSM:	    3	       st_one_d	                              01000	                         01000
+# Info: [40000]: FSM:	    4	       st_one_e	                              10000	                         10000
+# Info: [45251]: Built-in hardware memory core inferred for variable ': wrapper.sevenSegment_ROM depth = 256, width = 1'.
+# Info: [44523]: Root Module work.wrapper(description): Compiling...
+# Info: [45308]: "/home/runner/wrapper.vhd", line 520: The comparison operator has been optimized to constant 0.
+# Info: [45308]: "/home/runner/wrapper.vhd", line 519: The comparison operator has been optimized to constant 0.
+# Info: [45308]: "/home/runner/wrapper.vhd", line 535: The comparison operator has been optimized to constant 0.
+# Info: [45308]: "/home/runner/wrapper.vhd", line 534: The comparison operator has been optimized to constant 0.
+# Info: [44838]: "/home/runner/wrapper.vhd", line 326: Macro Selcounter "selcounter_4_4_4_0_1_flatten" inferred for node "count".
+# Info: [44838]: "/home/runner/wrapper.vhd", line 345: Macro Modgen_Counter "counter_up_aclear_clock_cnt_en_0_8" inferred for node "cnt".
+# Info: [44838]: "/home/runner/wrapper.vhd", line 483: Macro Add_Sub "M_RTLSIM_ADD_SUB_3" inferred for node "count_signal_one".
+# Info: [45252]: "/home/runner/wrapper.vhd", line 24: Inferred rom instance 'rtlcI1' of type 'rom_1_8_256_2'.
+# Info: [45205]: "/home/runner/wrapper.vhd", line 478: Module work.wrapper(description), Net(s) count_signal_two[2:0]: Latch inferred.
+# Info: [45205]: "/home/runner/wrapper.vhd", line 502: Module work.wrapper(description), Net(s) four_bits_input_one[2:0]: Latch inferred.
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 4, Inferred (Modgen/Selcounter/AddSub) : 3 (1 / 1 / 1), AcrossDH (Merged/Not-Merged) : (0 / 1), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+# Info: [44856]: Total lines of RTL compiled: 532.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [3022]: Reading file: /home/runner/rca.sdc.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [3022]: Reading file: /home/runner/rca.sdc.
+# Info: [1078]: Constraints: Precision will generate the constraint: create_generated_clock -name {reg_current_state_two(4)/out} -source [get_ports {clk}] -multiply_by 1 -divide_by 2 -duty_cycle 50 [get_pins {reg_current_state_two(4)/out}] on portinst:reg_current_state_two(4).out. Reason: Clock is generated from a flip flop. Please override the constraint if needed.
+# Info: [1078]: Constraints: Precision will generate the constraint: create_generated_clock -name {reg_current_state_one(4)/out} -source [get_ports {clk}] -multiply_by 1 -divide_by 2 -duty_cycle 50 [get_pins {reg_current_state_one(4)/out}] on portinst:reg_current_state_one(4).out. Reason: Clock is generated from a flip flop. Please override the constraint if needed.
+# Info: [1081]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: clk_PS		Clock Name: clk
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20013]: Precision will use 3 processor(s).
+# Info: [15002]: Optimizing design view:.work.wrapper.description
+# Info: [15002]: Optimizing design view:.work.wrapper.description
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:clk
+# Info: [1078]: Constraints: Precision will generate the constraint: create_generated_clock -name {reg_current_state_two(4)/out} -source [get_ports {clk}] -multiply_by 1 -divide_by 2 -duty_cycle 50 [get_pins {reg_current_state_two(4)/Q}] on portinst:reg_current_state_two(4).Q. Reason: Clock is generated from a flip flop. Please override the constraint if needed.
+# Info: [1078]: Constraints: Precision will generate the constraint: create_generated_clock -name {reg_current_state_one(4)/out} -source [get_ports {clk}] -multiply_by 1 -divide_by 2 -duty_cycle 50 [get_pins {reg_current_state_one(4)/Q}] on portinst:reg_current_state_one(4).Q. Reason: Clock is generated from a flip flop. Please override the constraint if needed.
+# Info: [1081]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: clk_PS		Clock Name: clk
+# Info: [3027]: Writing file: /home/runner/impl_1/wrapper.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/wrapper.xdc.
+# Info: -- Writing file /home/runner/impl_1/wrapper.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/wrapper.v.
+# Info: -- Writing file /home/runner/impl_1/wrapper.tcl
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 5.7 s secs.
+# Info: [11020]: Overall running time for synthesis: 8.4 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/wrapper.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: --------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/wrapper_area.rep
+# Info: 1               /home/runner/impl_1/wrapper_timing.rep
+# Info: 2               /home/runner/impl_1/wrapper_violations.rep
+# Info: 3               /home/runner/impl_1/wrapper_con_rep.sdc
+# Info: 4               /home/runner/impl_1/wrapper_tech_con_rep.sdc
+# Info: 5               /home/runner/impl_1/wrapper_fsm.rep
+# Info: 6               /home/runner/impl_1/wrapper_env.htm
+# Info: 7               /home/runner/impl_1/wrapper.edf
+# Info: 8               /home/runner/impl_1/wrapper.v
+# Info: 9               /home/runner/impl_1/wrapper.xdc
+# Info: 10              /home/runner/impl_1/wrapper.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               16      210       7.62%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              39      63400     0.06%
+# Info: CLB Slices                        4       15850     0.03%
+# Info: Dffs or Latches                   26      126800    0.02%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: *************************************************************
+# Info: Library: work    Cell: wrapper    View: description
+# Info: *************************************************************
+# Info:  Number of ports :                           16
+# Info:  Number of nets :                           100
+# Info:  Number of instances :                       98
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                 26
+# Info:  Number of LUTs :                            39
+# Info:  Number of LUTs with LUTNM/HLUTNM :          18
+# Info:  Number of MUX CARRYs :                       7
+# Info:  Number of accumulated instances :           98
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.wrapper.description
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | Port       | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | reset      | Input     |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | clk        | Input     |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(6)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(5)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(4)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(3)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(2)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(1)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(0)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(6)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(5)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(4)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(3)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(2)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(1)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX5(0)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 17.614):, Logic Levels = 3
+# Info: SOURCE CLOCK: name: clk period: 20.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 20.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                          GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_q(0)/C                 FDCE                  0.000   up
+# Info: reg_q(0)/Q                 FDCE        0.456     0.456   up
+# Info: cnt(0)                     (net)       0.393                   6     0
+# Info: ix39222z60357/I5           LUT6                  0.849   up
+# Info: ix39222z60357/O            LUT6        0.124     0.973   up
+# Info: nx39222z7                  (net)       0.333                   1     1
+# Info: ix39222z1571/I3            LUT6                  1.306   up
+# Info: ix39222z1571/O             LUT6        0.124     1.430   dn
+# Info: nx39222z3                  (net)       0.432                   8     2
+# Info: ix3034z1316/I0             LUT2                  1.862   dn
+# Info: ix3034z1316/O              LUT2        0.124     1.986   dn
+# Info: nx3034z1                   (net)       0.333                   1     3
+# Info: reg_current_state_two(0)/D FDPE                  2.319   dn
+# Info: 		Initial edge separation:     20.000
+# Info: 		Source clock delay:      -    1.692
+# Info: 		Dest clock delay:        +    1.692
+# Info: 		                        -----------
+# Info: 		Edge separation:             20.000
+# Info: 		Setup constraint:        -    0.067
+# Info: 		                        -----------
+# Info: 		Data required time:          19.933
+# Info: 		Data arrival time:       -    2.319   ( 35.71% cell delay, 64.29% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                       17.614
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: //
+# Info: // Verilog description for cell wrapper,
+# Info: // Sat Dec 12 01:45:06 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module wrapper ( reset, clk, HEX0, HEX5 ) ;
+# Info:     input reset ;
+# Info:     input clk ;
+# Info:     output [6:0]HEX0 ;
+# Info:     output [6:0]HEX5 ;
+# Info:     wire [2:0]count_signal_two;
+# Info:     wire [2:0]four_bits_input_one;
+# Info:     wire \current_state_two(4)  ;
+# Info:     wire \current_state_two(3)  , \current_state_two(2)  ,
+# Info:          \current_state_two(0)  ;
+# Info:     wire \current_state_one(4)  ;
+# Info:     wire \current_state_one(3)  , \current_state_one(2)  ,
+# Info:          \current_state_one(0)  , \inc_d(0)  , nx8474z1, \inc_d(1)  , nx8475z1,
+# Info:          \inc_d(2)  , nx8476z1, \inc_d(3)  , nx8477z1, \inc_d(4)  , nx8478z1,
+# Info:          \inc_d(5)  , nx8479z1, \inc_d(6)  , nx51681z1, \inc_d(7)  , reset_int;
+# Info:     wire clk_int;
+# Info:     wire not_reset, not_four_bits_input_one_0, not_count_signal_two_0, nx35805z1,
+# Info:          nx32814z1, nx33811z1, nx34808z1, nx124z1, nx1121z1, nx12301z1,
+# Info:          nx13298z1, nx56455z1, nx57452z1, nx8226z1, nx9223z1, nx8473z1, nx3034z1,
+# Info:          nx1040z1, nx43z1, nx64582z1, nx35234z1, nx37228z1, nx38225z1, nx39222z2,
+# Info:          nx39222z3, nx39222z7, nx39222z6, nx39222z5, nx39222z4, nx54461z1,
+# Info:          nx55458z1, nx58449z1, nx59446z1, nx60443z1, nx6232z1, nx7229z1,
+# Info:          nx10220z1, nx11217z1, nx12214z1, nx39222z1, nx567;
+# Info:     wire [3:0]counter_value;
+# Info:     wire [7:0]cnt;
+# Info:     XORCY xorcy_0 (.O (\inc_d(0)  ), .CI (nx39222z1), .LI (cnt[0])) ;
+# Info:     XORCY xorcy_1 (.O (\inc_d(1)  ), .CI (nx8474z1), .LI (cnt[1])) ;
+# Info:     XORCY xorcy_2 (.O (\inc_d(2)  ), .CI (nx8475z1), .LI (cnt[2])) ;
+# Info:     XORCY xorcy_3 (.O (\inc_d(3)  ), .CI (nx8476z1), .LI (cnt[3])) ;
+# Info:     XORCY xorcy_4 (.O (\inc_d(4)  ), .CI (nx8477z1), .LI (cnt[4])) ;
+# Info:     XORCY xorcy_5 (.O (\inc_d(5)  ), .CI (nx8478z1), .LI (cnt[5])) ;
+# Info:     XORCY xorcy_6 (.O (\inc_d(6)  ), .CI (nx8479z1), .LI (cnt[6])) ;
+# Info:     XORCY xorcy_7 (.O (\inc_d(7)  ), .CI (nx51681z1), .LI (cnt[7])) ;
+# Info:     OBUF \HEX5_obuf(0)  (.O (HEX5[0]), .I (nx12214z1)) ;
+# Info:     OBUF \HEX5_obuf(1)  (.O (HEX5[1]), .I (nx11217z1)) ;
+# Info:     OBUF \HEX5_obuf(2)  (.O (HEX5[2]), .I (nx10220z1)) ;
+# Info:     OBUF \HEX5_obuf(3)  (.O (HEX5[3]), .I (nx9223z1)) ;
+# Info:     OBUF \HEX5_obuf(4)  (.O (HEX5[4]), .I (nx8226z1)) ;
+# Info:     OBUF \HEX5_obuf(5)  (.O (HEX5[5]), .I (nx7229z1)) ;
+# Info:     OBUF \HEX5_obuf(6)  (.O (HEX5[6]), .I (nx6232z1)) ;
+# Info:     OBUF \HEX0_obuf(0)  (.O (HEX0[0]), .I (nx60443z1)) ;
+# Info:     OBUF \HEX0_obuf(1)  (.O (HEX0[1]), .I (nx59446z1)) ;
+# Info:     OBUF \HEX0_obuf(2)  (.O (HEX0[2]), .I (nx58449z1)) ;
+# Info:     OBUF \HEX0_obuf(3)  (.O (HEX0[3]), .I (nx57452z1)) ;
+# Info:     OBUF \HEX0_obuf(4)  (.O (HEX0[4]), .I (nx56455z1)) ;
+# Info:     OBUF \HEX0_obuf(5)  (.O (HEX0[5]), .I (nx55458z1)) ;
+# Info:     OBUF \HEX0_obuf(6)  (.O (HEX0[6]), .I (nx54461z1)) ;
+# Info:     IBUF reset_ibuf (.O (reset_int), .I (reset)) ;
+# Info:     FDCE \reg_current_state_one(4)  (.Q (\current_state_one(4)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .CLR (not_reset), .D (nx39222z2)) ;
+# Info:     FDCE \reg_current_state_one(3)  (.Q (\current_state_one(3)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .CLR (not_reset), .D (nx38225z1)) ;
+# Info:     FDCE \reg_current_state_one(2)  (.Q (\current_state_one(2)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .CLR (not_reset), .D (nx37228z1)) ;
+# Info:     FDPE \reg_current_state_one(0)  (.Q (\current_state_one(0)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .D (nx35234z1), .PRE (not_reset)) ;
+# Info:     FDCE \reg_current_state_two(4)  (.Q (\current_state_two(4)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .CLR (not_reset), .D (nx64582z1)) ;
+# Info:     FDCE \reg_current_state_two(3)  (.Q (\current_state_two(3)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .CLR (not_reset), .D (nx43z1)) ;
+# Info:     FDCE \reg_current_state_two(2)  (.Q (\current_state_two(2)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .CLR (not_reset), .D (nx1040z1)) ;
+# Info:     FDPE \reg_current_state_two(0)  (.Q (\current_state_two(0)  ), .C (clk_int)
+# Info:          , .CE (nx39222z1), .D (nx3034z1), .PRE (not_reset)) ;
+# Info:     INV ix33811z1315 (.O (not_reset), .I (reset_int)) ;
+# Info:     INV ix2118z1315 (.O (not_four_bits_input_one_0), .I (four_bits_input_one[0])
+# Info:         ) ;
+# Info:     INV ix11304z1315 (.O (not_count_signal_two_0), .I (count_signal_two[0])) ;
+# Info:     INV ix35805z1315 (.O (nx35805z1), .I (counter_value[0])) ;
+# Info:     LUT4 ix32814z45003 (.O (nx32814z1), .I0 (counter_value[3]), .I1 (
+# Info:          counter_value[2]), .I2 (counter_value[1]), .I3 (counter_value[0])) ;
+# Info:          defparam ix32814z45003.INIT = 16'hAAA9;
+# Info:     LUT4 ix33811z53733 (.O (nx33811z1), .I0 (counter_value[3]), .I1 (
+# Info:          counter_value[2]), .I2 (counter_value[1]), .I3 (counter_value[0])) ;
+# Info:          defparam ix33811z53733.INIT = 16'hCCC2;
+# Info:     LUT4 ix34808z62768 (.O (nx34808z1), .I0 (counter_value[3]), .I1 (
+# Info:          counter_value[2]), .I2 (counter_value[1]), .I3 (counter_value[0])) ;
+# Info:          defparam ix34808z62768.INIT = 16'hF00E;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT3 ix124z1420 (.O (nx124z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix124z1420.INIT = 8'h6A;
+# Info:     (* HLUTNM = "LUT62_1_9" *)
+# Info:     LUT2 ix1121z1320 (.O (nx1121z1), .I0 (four_bits_input_one[1]), .I1 (
+# Info:          four_bits_input_one[0])) ;
+# Info:          defparam ix1121z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_9" *)
+# Info:     LUT2 ix12301z1320 (.O (nx12301z1), .I0 (count_signal_two[1]), .I1 (
+# Info:          count_signal_two[0])) ;
+# Info:          defparam ix12301z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT3 ix13298z1420 (.O (nx13298z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix13298z1420.INIT = 8'h6A;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT3 ix56455z1556 (.O (nx56455z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix56455z1556.INIT = 8'hF2;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT3 ix57452z1460 (.O (nx57452z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix57452z1460.INIT = 8'h92;
+# Info:     (* HLUTNM = "LUT62_1_8" *)
+# Info:     LUT3 ix8226z1556 (.O (nx8226z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix8226z1556.INIT = 8'hF2;
+# Info:     (* HLUTNM = "LUT62_1_8" *)
+# Info:     LUT3 ix9223z1460 (.O (nx9223z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix9223z1460.INIT = 8'h92;
+# Info:     GND ps_gnd (.G (nx8473z1)) ;
+# Info:     LUT2 ix3034z1316 (.O (nx3034z1), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_two(2)  )) ;
+# Info:          defparam ix3034z1316.INIT = 4'h2;
+# Info:     LUT3 ix1040z1315 (.O (nx1040z1), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_two(3)  ), .I2 (\current_state_two(0)  )) ;
+# Info:          defparam ix1040z1315.INIT = 8'h01;
+# Info:     LUT2 ix43z1322 (.O (nx43z1), .I0 (nx39222z3), .I1 (\current_state_two(2)  )
+# Info:          ) ;
+# Info:          defparam ix43z1322.INIT = 4'h8;
+# Info:     LUT2 ix64582z1318 (.O (nx64582z1), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_two(3)  )) ;
+# Info:          defparam ix64582z1318.INIT = 4'h4;
+# Info:     LUT3 ix35234z1398 (.O (nx35234z1), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_one(2)  ), .I2 (\current_state_one(0)  )) ;
+# Info:          defparam ix35234z1398.INIT = 8'h54;
+# Info:     LUT3 ix37228z1315 (.O (nx37228z1), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_one(2)  ), .I2 (\current_state_one(0)  )) ;
+# Info:          defparam ix37228z1315.INIT = 8'h01;
+# Info:     LUT2 ix38225z1322 (.O (nx38225z1), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_one(2)  )) ;
+# Info:          defparam ix38225z1322.INIT = 4'h8;
+# Info:     LUT2 ix39222z1323 (.O (nx39222z2), .I0 (nx39222z3), .I1 (
+# Info:          \current_state_one(3)  )) ;
+# Info:          defparam ix39222z1323.INIT = 4'h8;
+# Info:     LUT6 ix39222z1571 (.O (nx39222z3), .I0 (nx39222z4), .I1 (nx39222z5), .I2 (
+# Info:          nx39222z6), .I3 (nx39222z7), .I4 (cnt[6]), .I5 (cnt[2])) ;
+# Info:          defparam ix39222z1571.INIT = 64'hCCCC55550F0F00FF;
+# Info:     LUT6 ix39222z60357 (.O (nx39222z7), .I0 (cnt[7]), .I1 (cnt[5]), .I2 (cnt[4])
+# Info:          , .I3 (cnt[3]), .I4 (cnt[1]), .I5 (cnt[0])) ;
+# Info:          defparam ix39222z60357.INIT = 64'h731A5A65ED44E69D;
+# Info:     LUT6 ix39222z25775 (.O (nx39222z6), .I0 (cnt[7]), .I1 (cnt[5]), .I2 (cnt[4])
+# Info:          , .I3 (cnt[3]), .I4 (cnt[1]), .I5 (cnt[0])) ;
+# Info:          defparam ix39222z25775.INIT = 64'hF82263BF14A25F88;
+# Info:     LUT6 ix39222z13222 (.O (nx39222z5), .I0 (cnt[7]), .I1 (cnt[5]), .I2 (cnt[4])
+# Info:          , .I3 (cnt[3]), .I4 (cnt[1]), .I5 (cnt[0])) ;
+# Info:          defparam ix39222z13222.INIT = 64'h2A4BD1C279D92E80;
+# Info:     LUT6 ix39222z50006 (.O (nx39222z4), .I0 (cnt[7]), .I1 (cnt[5]), .I2 (cnt[4])
+# Info:          , .I3 (cnt[3]), .I4 (cnt[1]), .I5 (cnt[0])) ;
+# Info:          defparam ix39222z50006.INIT = 64'h48EDE7C6934CBE31;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT3 ix54461z1459 (.O (nx54461z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix54461z1459.INIT = 8'h91;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT3 ix55458z1526 (.O (nx55458z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix55458z1526.INIT = 8'hD4;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT3 ix58449z1318 (.O (nx58449z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix58449z1318.INIT = 8'h04;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT3 ix59446z1354 (.O (nx59446z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix59446z1354.INIT = 8'h28;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT3 ix60443z1332 (.O (nx60443z1), .I0 (four_bits_input_one[2]), .I1 (
+# Info:          four_bits_input_one[1]), .I2 (four_bits_input_one[0])) ;
+# Info:          defparam ix60443z1332.INIT = 8'h12;
+# Info:     (* HLUTNM = "LUT62_1_7" *)
+# Info:     LUT3 ix6232z1459 (.O (nx6232z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix6232z1459.INIT = 8'h91;
+# Info:     (* HLUTNM = "LUT62_1_7" *)
+# Info:     LUT3 ix7229z1526 (.O (nx7229z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix7229z1526.INIT = 8'hD4;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT3 ix10220z1318 (.O (nx10220z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix10220z1318.INIT = 8'h04;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT3 ix11217z1354 (.O (nx11217z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix11217z1354.INIT = 8'h28;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT3 ix12214z1332 (.O (nx12214z1), .I0 (count_signal_two[2]), .I1 (
+# Info:          count_signal_two[1]), .I2 (count_signal_two[0])) ;
+# Info:          defparam ix12214z1332.INIT = 8'h12;
+# Info:     LUT4 ix39222z1315 (.O (nx39222z1), .I0 (counter_value[3]), .I1 (
+# Info:          counter_value[2]), .I2 (counter_value[1]), .I3 (counter_value[0])) ;
+# Info:          defparam ix39222z1315.INIT = 16'h0001;
+# Info:     BUFGP clk_ibuf (.O (clk_int), .I (clk)) ;
+# Info:     VCC ps_vcc (.P (nx567)) ;
+# Info:     FDPE \reg_count(0)  (.Q (counter_value[0]), .C (clk_int), .CE (nx567), .D (
+# Info:          nx35805z1), .PRE (not_reset)) ;
+# Info:     FDCE \reg_count(1)  (.Q (counter_value[1]), .C (clk_int), .CE (nx567), .CLR (
+# Info:          not_reset), .D (nx34808z1)) ;
+# Info:     FDCE \reg_count(2)  (.Q (counter_value[2]), .C (clk_int), .CE (nx567), .CLR (
+# Info:          not_reset), .D (nx33811z1)) ;
+# Info:     FDPE \reg_count(3)  (.Q (counter_value[3]), .C (clk_int), .CE (nx567), .D (
+# Info:          nx32814z1), .PRE (not_reset)) ;
+# Info:     FDCE \reg_q(7)  (.Q (cnt[7]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(7)  )) ;
+# Info:     FDCE \reg_q(6)  (.Q (cnt[6]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(6)  )) ;
+# Info:     FDCE \reg_q(5)  (.Q (cnt[5]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(5)  )) ;
+# Info:     FDCE \reg_q(4)  (.Q (cnt[4]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(4)  )) ;
+# Info:     FDCE \reg_q(3)  (.Q (cnt[3]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(3)  )) ;
+# Info:     FDCE \reg_q(2)  (.Q (cnt[2]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(2)  )) ;
+# Info:     FDCE \reg_q(1)  (.Q (cnt[1]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(1)  )) ;
+# Info:     FDCE \reg_q(0)  (.Q (cnt[0]), .C (clk_int), .CE (nx567), .CLR (not_reset), .D (
+# Info:          \inc_d(0)  )) ;
+# Info:     MUXCY muxcy_0 (.O (nx8474z1), .CI (nx39222z1), .DI (nx8473z1), .S (cnt[0])
+# Info:           ) ;
+# Info:     MUXCY muxcy_1 (.O (nx8475z1), .CI (nx8474z1), .DI (nx8473z1), .S (cnt[1])) ;
+# Info:     MUXCY muxcy_2 (.O (nx8476z1), .CI (nx8475z1), .DI (nx8473z1), .S (cnt[2])) ;
+# Info:     MUXCY muxcy_3 (.O (nx8477z1), .CI (nx8476z1), .DI (nx8473z1), .S (cnt[3])) ;
+# Info:     MUXCY muxcy_4 (.O (nx8478z1), .CI (nx8477z1), .DI (nx8473z1), .S (cnt[4])) ;
+# Info:     MUXCY muxcy_5 (.O (nx8479z1), .CI (nx8478z1), .DI (nx8473z1), .S (cnt[5])) ;
+# Info:     MUXCY muxcy_6 (.O (nx51681z1), .CI (nx8479z1), .DI (nx8473z1), .S (cnt[6])
+# Info:           ) ;
+# Info:     LDCE \lat_count_signal_two(2)  (.Q (count_signal_two[2]), .CLR (nx8473z1), .D (
+# Info:          nx13298z1), .G (\current_state_two(4)  ), .GE (nx567)) ;
+# Info:     LDCE \lat_count_signal_two(1)  (.Q (count_signal_two[1]), .CLR (nx8473z1), .D (
+# Info:          nx12301z1), .G (\current_state_two(4)  ), .GE (nx567)) ;
+# Info:     LDCE \lat_count_signal_two(0)  (.Q (count_signal_two[0]), .CLR (nx8473z1), .D (
+# Info:          not_count_signal_two_0), .G (\current_state_two(4)  ), .GE (nx567)) ;
+# Info:     LDCE \lat_four_bits_input_one(0)  (.Q (four_bits_input_one[0]), .CLR (
+# Info:          nx8473z1), .D (not_four_bits_input_one_0), .G (\current_state_one(4)  )
+# Info:          , .GE (nx567)) ;
+# Info:     LDCE \lat_four_bits_input_one(1)  (.Q (four_bits_input_one[1]), .CLR (
+# Info:          nx8473z1), .D (nx1121z1), .G (\current_state_one(4)  ), .GE (nx567)) ;
+# Info:     LDCE \lat_four_bits_input_one(2)  (.Q (four_bits_input_one[2]), .CLR (
+# Info:          nx8473z1), .D (nx124z1), .G (\current_state_one(4)  ), .GE (nx567)) ;
+# Info: endmodule
+Done
