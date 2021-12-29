@@ -1,0 +1,199 @@
+[2020-10-23 00:35:07 EDT] precision -shell -file run.do -fileargs "rca_behavioral.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@01f289e4c13f #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Fri Oct 23 00:35:07 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/rca_behavioral.vhd" ...
+# Info: [669]: Top module of the design is set to: rca_behavioral.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.rca_behavioral(behavioral): Pre-processing...
+# Info: [44523]: Root Module work.rca_behavioral(behavioral): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 13.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.rca_behavioral.behavioral
+# Info: [15002]: Optimizing design view:.work.rca_behavioral.behavioral
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: /home/runner/impl_1/rca_behavioral.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/rca_behavioral.xdc.
+# Info: -- Writing file /home/runner/impl_1/rca_behavioral.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/rca_behavioral.v.
+# Info: -- Writing file /home/runner/impl_1/rca_behavioral.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.4 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.4 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/rca_behavioral.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: ---------------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/rca_behavioral_area.rep
+# Info: 1               /home/runner/impl_1/rca_behavioral_con_rep.sdc
+# Info: 2               /home/runner/impl_1/rca_behavioral_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/rca_behavioral_fsm.rep
+# Info: 4               /home/runner/impl_1/rca_behavioral_env.htm
+# Info: 5               /home/runner/impl_1/rca_behavioral.edf
+# Info: 6               /home/runner/impl_1/rca_behavioral.v
+# Info: 7               /home/runner/impl_1/rca_behavioral.xdc
+# Info: 8               /home/runner/impl_1/rca_behavioral.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               13      210       6.19%
+# Info: Global Buffers                    0       32        0.00%
+# Info: LUTs                              6       63400     0.01%
+# Info: CLB Slices                        0       15850     0.00%
+# Info: Dffs or Latches                   0       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: *******************************************************************
+# Info: Library: work    Cell: rca_behavioral    View: behavioral
+# Info: *******************************************************************
+# Info:  Number of ports :                           13
+# Info:  Number of nets :                            27
+# Info:  Number of instances :                       19
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of LUTs :                             6
+# Info:  Number of LUTs with LUTNM/HLUTNM :           4
+# Info:  Number of accumulated instances :           19
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.rca_behavioral.behavioral
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | Port    | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | A(3)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | A(2)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | A(1)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | A(0)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | B(3)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | B(2)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | B(1)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | B(0)    | Input     |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | S(4)    | Output    |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | S(3)    | Output    |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | S(2)    | Output    |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | S(1)    | Output    |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: | S(0)    | Output    |          |          |          |
+# Info: +---------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell rca_behavioral,
+# Info: // Fri Oct 23 00:35:13 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module rca_behavioral ( A, B, S ) ;
+# Info:     input [3:0]A ;
+# Info:     input [3:0]B ;
+# Info:     output [4:0]S ;
+# Info:     wire [3:0]A_int;
+# Info:     wire [3:0]B_int;
+# Info:     wire nx48511z1, nx47514z1, nx46517z1, nx45520z1, nx44523z1, nx48511z2;
+# Info:     OBUF \S_obuf(0)  (.O (S[0]), .I (nx44523z1)) ;
+# Info:     OBUF \S_obuf(1)  (.O (S[1]), .I (nx45520z1)) ;
+# Info:     OBUF \S_obuf(2)  (.O (S[2]), .I (nx46517z1)) ;
+# Info:     OBUF \S_obuf(3)  (.O (S[3]), .I (nx47514z1)) ;
+# Info:     OBUF \S_obuf(4)  (.O (S[4]), .I (nx48511z1)) ;
+# Info:     IBUF \B_ibuf(0)  (.O (B_int[0]), .I (B[0])) ;
+# Info:     IBUF \B_ibuf(1)  (.O (B_int[1]), .I (B[1])) ;
+# Info:     IBUF \B_ibuf(2)  (.O (B_int[2]), .I (B[2])) ;
+# Info:     IBUF \B_ibuf(3)  (.O (B_int[3]), .I (B[3])) ;
+# Info:     IBUF \A_ibuf(0)  (.O (A_int[0]), .I (A[0])) ;
+# Info:     IBUF \A_ibuf(1)  (.O (A_int[1]), .I (A[1])) ;
+# Info:     IBUF \A_ibuf(2)  (.O (A_int[2]), .I (A[2])) ;
+# Info:     IBUF \A_ibuf(3)  (.O (A_int[3]), .I (A[3])) ;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT5 ix48511z57698 (.O (nx48511z1), .I0 (nx48511z2), .I1 (A_int[3]), .I2 (
+# Info:          A_int[2]), .I3 (B_int[3]), .I4 (B_int[2])) ;
+# Info:          defparam ix48511z57698.INIT = 32'hFDC4DC40;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT5 ix47514z26814 (.O (nx47514z1), .I0 (nx48511z2), .I1 (A_int[3]), .I2 (
+# Info:          A_int[2]), .I3 (B_int[3]), .I4 (B_int[2])) ;
+# Info:          defparam ix47514z26814.INIT = 32'hC639639C;
+# Info:     LUT6 ix46517z23244 (.O (nx46517z1), .I0 (A_int[2]), .I1 (A_int[1]), .I2 (
+# Info:          A_int[0]), .I3 (B_int[2]), .I4 (B_int[1]), .I5 (B_int[0])) ;
+# Info:          defparam ix46517z23244.INIT = 64'hA956956A996655AA;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT4 ix45520z39804 (.O (nx45520z1), .I0 (A_int[1]), .I1 (A_int[0]), .I2 (
+# Info:          B_int[1]), .I3 (B_int[0])) ;
+# Info:          defparam ix45520z39804.INIT = 16'h965A;
+# Info:     LUT2 ix44523z1320 (.O (nx44523z1), .I0 (A_int[0]), .I1 (B_int[0])) ;
+# Info:          defparam ix44523z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT4 ix48511z7298 (.O (nx48511z2), .I0 (A_int[1]), .I1 (A_int[0]), .I2 (
+# Info:          B_int[1]), .I3 (B_int[0])) ;
+# Info:          defparam ix48511z7298.INIT = 16'h175F;
+# Info: endmodule
+Done

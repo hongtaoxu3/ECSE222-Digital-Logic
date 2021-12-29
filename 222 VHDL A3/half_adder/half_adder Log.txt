@@ -1,0 +1,156 @@
+[2020-10-21 07:55:59 EDT] precision -shell -file run.do -fileargs "half_adder.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@759154eafda9 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Wed Oct 21 07:55:59 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/half_adder.vhd" ...
+# Info: [669]: Top module of the design is set to: half_adder.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.half_adder(structural_half_adder): Pre-processing...
+# Info: [44523]: Root Module work.half_adder(structural_half_adder): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 13.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.half_adder.structural_half_adder
+# Info: [15002]: Optimizing design view:.work.half_adder.structural_half_adder
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: /home/runner/impl_1/half_adder.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/half_adder.xdc.
+# Info: -- Writing file /home/runner/impl_1/half_adder.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/half_adder.v.
+# Info: -- Writing file /home/runner/impl_1/half_adder.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.3 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/half_adder.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: -----------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/half_adder_area.rep
+# Info: 1               /home/runner/impl_1/half_adder_con_rep.sdc
+# Info: 2               /home/runner/impl_1/half_adder_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/half_adder_fsm.rep
+# Info: 4               /home/runner/impl_1/half_adder_env.htm
+# Info: 5               /home/runner/impl_1/half_adder.edf
+# Info: 6               /home/runner/impl_1/half_adder.v
+# Info: 7               /home/runner/impl_1/half_adder.xdc
+# Info: 8               /home/runner/impl_1/half_adder.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               4       210       1.90%
+# Info: Global Buffers                    0       32        0.00%
+# Info: LUTs                              2       63400     0.00%
+# Info: CLB Slices                        0       15850     0.00%
+# Info: Dffs or Latches                   0       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: **************************************************************************
+# Info: Library: work    Cell: half_adder    View: structural_half_adder
+# Info: **************************************************************************
+# Info:  Number of ports :                            4
+# Info:  Number of nets :                             8
+# Info:  Number of instances :                        6
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of LUTs :                             2
+# Info:  Number of LUTs with LUTNM/HLUTNM :           2
+# Info:  Number of accumulated instances :            6
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.half_adder.structural_half_adder
+# Info: +------+-----------+----------+----------+----------+
+# Info: | Port | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +------+-----------+----------+----------+----------+
+# Info: | a    | Input     |          |          |          |
+# Info: +------+-----------+----------+----------+----------+
+# Info: | b    | Input     |          |          |          |
+# Info: +------+-----------+----------+----------+----------+
+# Info: | s    | Output    |          |          |          |
+# Info: +------+-----------+----------+----------+----------+
+# Info: | c    | Output    |          |          |          |
+# Info: +------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell half_adder,
+# Info: // Wed Oct 21 07:56:04 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module half_adder ( a, b, s, c ) ;
+# Info:     input a ;
+# Info:     input b ;
+# Info:     output s ;
+# Info:     output c ;
+# Info:     wire a_int, b_int, nx53522z1, nx18494z1;
+# Info:     OBUF c_obuf (.O (c), .I (nx18494z1)) ;
+# Info:     OBUF s_obuf (.O (s), .I (nx53522z1)) ;
+# Info:     IBUF b_ibuf (.O (b_int), .I (b)) ;
+# Info:     IBUF a_ibuf (.O (a_int), .I (a)) ;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT2 ix53522z1320 (.O (nx53522z1), .I0 (a_int), .I1 (b_int)) ;
+# Info:          defparam ix53522z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT2 ix18494z1322 (.O (nx18494z1), .I0 (a_int), .I1 (b_int)) ;
+# Info:          defparam ix18494z1322.INIT = 4'h8;
+# Info: endmodule
+Done
