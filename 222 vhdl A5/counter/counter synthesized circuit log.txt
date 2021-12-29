@@ -1,0 +1,181 @@
+[2020-11-20 00:13:57 EST] precision -shell -file run.do -fileargs "three_bit_up_counter.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@a702bdff7a80 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Fri Nov 20 00:13:58 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/three_bit_up_counter.vhd" ...
+# Info: [669]: Top module of the design is set to: three_bit_up_counter.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.three_bit_up_counter(description): Pre-processing...
+# Info: [44523]: Root Module work.three_bit_up_counter(description): Compiling...
+# Info: [44838]: "/home/runner/three_bit_up_counter.vhd", line 31: Macro Modgen_Counter "counter_up_sclear_aclear_clock_clk_en_0_3" inferred for node "count_signal".
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 1, Inferred (Modgen/Selcounter/AddSub) : 1 (1 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+# Info: [44856]: Total lines of RTL compiled: 33.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20013]: Precision will use 2 processor(s).
+# Info: [15002]: Optimizing design view:.work.three_bit_up_counter.description
+# Info: [15002]: Optimizing design view:.work.three_bit_up_counter.description
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /home/runner/impl_1/three_bit_up_counter.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/three_bit_up_counter.xdc.
+# Info: -- Writing file /home/runner/impl_1/three_bit_up_counter.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/three_bit_up_counter.v.
+# Info: -- Writing file /home/runner/impl_1/three_bit_up_counter.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 1.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 3.0 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/three_bit_up_counter.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: ---------------------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/three_bit_up_counter_area.rep
+# Info: 1               /home/runner/impl_1/three_bit_up_counter_con_rep.sdc
+# Info: 2               /home/runner/impl_1/three_bit_up_counter_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/three_bit_up_counter_fsm.rep
+# Info: 4               /home/runner/impl_1/three_bit_up_counter_env.htm
+# Info: 5               /home/runner/impl_1/three_bit_up_counter.edf
+# Info: 6               /home/runner/impl_1/three_bit_up_counter.v
+# Info: 7               /home/runner/impl_1/three_bit_up_counter.xdc
+# Info: 8               /home/runner/impl_1/three_bit_up_counter.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               6       210       2.86%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              4       63400     0.01%
+# Info: CLB Slices                        1       15850     0.01%
+# Info: Dffs or Latches                   3       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: **************************************************************************
+# Info: Library: work    Cell: three_bit_up_counter    View: description
+# Info: **************************************************************************
+# Info:  Number of ports :                            6
+# Info:  Number of nets :                            16
+# Info:  Number of instances :                       13
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                  3
+# Info:  Number of LUTs :                             4
+# Info:  Number of LUTs with LUTNM/HLUTNM :           2
+# Info:  Number of accumulated instances :           13
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.three_bit_up_counter.description
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | Port        | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | enable      | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | reset       | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | clk         | Input     |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | count(2)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | count(1)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: | count(0)    | Output    |          |          |          |
+# Info: +-------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell three_bit_up_counter,
+# Info: // Fri Nov 20 00:14:07 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module three_bit_up_counter ( enable, reset, clk, count ) ;
+# Info:     input enable ;
+# Info:     input reset ;
+# Info:     input clk ;
+# Info:     output [2:0]count ;
+# Info:     wire [2:0]count_1_0;
+# Info:     wire enable_int, reset_int;
+# Info:     wire clk_int;
+# Info:     wire not_reset, nx16265z1, nx15268z1, nx14271z1;
+# Info:     OBUF \count_obuf(0)  (.O (count[0]), .I (count_1_0[0])) ;
+# Info:     OBUF \count_obuf(1)  (.O (count[1]), .I (count_1_0[1])) ;
+# Info:     OBUF \count_obuf(2)  (.O (count[2]), .I (count_1_0[2])) ;
+# Info:     IBUF reset_ibuf (.O (reset_int), .I (reset)) ;
+# Info:     IBUF enable_ibuf (.O (enable_int), .I (enable)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDCE \modgen_counter_count_reg_q(2)  (.Q (count_1_0[2]), .C (clk_int), .CE (
+# Info:          enable_int), .CLR (not_reset), .D (nx14271z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDCE \modgen_counter_count_reg_q(1)  (.Q (count_1_0[1]), .C (clk_int), .CE (
+# Info:          enable_int), .CLR (not_reset), .D (nx15268z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDCE \modgen_counter_count_reg_q(0)  (.Q (count_1_0[0]), .C (clk_int), .CE (
+# Info:          enable_int), .CLR (not_reset), .D (nx16265z1)) ;
+# Info:     INV ix14271z1315 (.O (not_reset), .I (reset_int)) ;
+# Info:     INV ix16265z1315 (.O (nx16265z1), .I (count_1_0[0])) ;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT2 ix15268z1320 (.O (nx15268z1), .I0 (count_1_0[1]), .I1 (count_1_0[0])) ;
+# Info:          defparam ix15268z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT3 ix14271z1421 (.O (nx14271z1), .I0 (count_1_0[2]), .I1 (count_1_0[1]), .I2 (
+# Info:          count_1_0[0])) ;
+# Info:          defparam ix14271z1421.INIT = 8'h6A;
+# Info:     BUFGP clk_ibuf (.O (clk_int), .I (clk)) ;
+# Info: endmodule
+Done

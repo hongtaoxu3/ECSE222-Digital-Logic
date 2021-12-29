@@ -1,0 +1,256 @@
+[2020-11-20 09:24:33 EST] precision -shell -file run.do -fileargs "wrapper.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@0bcd3b32f6e1 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Fri Nov 20 09:24:34 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/wrapper.vhd" ...
+# Info: [669]: Top module of the design is set to: wrapper.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.wrapper(description): Pre-processing...
+# Info: [44523]: Root Module work.wrapper(description): Compiling...
+# Info: [45308]: "/home/runner/wrapper.vhd", line 91: The comparison operator has been optimized to constant 0.
+# Info: [45308]: "/home/runner/wrapper.vhd", line 90: The comparison operator has been optimized to constant 0.
+# Info: [44838]: "/home/runner/wrapper.vhd", line 43: Macro Selcounter "selcounter_4_4_4_0_1_flatten" inferred for node "down_counter".
+# Info: [44838]: "/home/runner/wrapper.vhd", line 69: Macro Modgen_Counter "counter_up_sclear_aclear_clock_clk_en_0_3" inferred for node "count_signal".
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 2, Inferred (Modgen/Selcounter/AddSub) : 2 (1 / 1 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+# Info: [44856]: Total lines of RTL compiled: 87.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20013]: Precision will use 2 processor(s).
+# Info: [15002]: Optimizing design view:.work.wrapper.description
+# Info: [15002]: Optimizing design view:.work.wrapper.description
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /home/runner/impl_1/wrapper.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/wrapper.xdc.
+# Info: -- Writing file /home/runner/impl_1/wrapper.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/wrapper.v.
+# Info: -- Writing file /home/runner/impl_1/wrapper.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2.0 s secs.
+# Info: [11020]: Overall running time for synthesis: 6.6 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/wrapper.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: --------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/wrapper_area.rep
+# Info: 1               /home/runner/impl_1/wrapper_con_rep.sdc
+# Info: 2               /home/runner/impl_1/wrapper_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/wrapper_fsm.rep
+# Info: 4               /home/runner/impl_1/wrapper_env.htm
+# Info: 5               /home/runner/impl_1/wrapper.edf
+# Info: 6               /home/runner/impl_1/wrapper.v
+# Info: 7               /home/runner/impl_1/wrapper.xdc
+# Info: 8               /home/runner/impl_1/wrapper.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               10      210       4.76%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              16      63400     0.03%
+# Info: CLB Slices                        1       15850     0.01%
+# Info: Dffs or Latches                   7       126800    0.01%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: *************************************************************
+# Info: Library: work    Cell: wrapper    View: description
+# Info: *************************************************************
+# Info:  Number of ports :                           10
+# Info:  Number of nets :                            36
+# Info:  Number of instances :                       33
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                  7
+# Info:  Number of LUTs :                            16
+# Info:  Number of LUTs with LUTNM/HLUTNM :          12
+# Info:  Number of accumulated instances :           33
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.wrapper.description
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | Port       | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | enable     | Input     |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | reset      | Input     |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | clk        | Input     |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(6)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(5)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(4)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(3)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(2)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(1)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: | HEX0(0)    | Output    |          |          |          |
+# Info: +------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell wrapper,
+# Info: // Fri Nov 20 09:24:52 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module wrapper ( enable, reset, clk, HEX0 ) ;
+# Info:     input enable ;
+# Info:     input reset ;
+# Info:     input clk ;
+# Info:     output [6:0]HEX0 ;
+# Info:     wire [3:0]down_counter_value;
+# Info:     wire [2:0]four_bits_count;
+# Info:     wire enable_int, reset_int;
+# Info:     wire clk_int;
+# Info:     wire not_reset, nx34263z1, nx29019z1, nx30016z1, nx31013z2, nx31272z1,
+# Info:          nx32269z1, nx33266z1, nx56455z1, nx57452z1, nx31013z1, nx54461z1,
+# Info:          nx55458z1, nx58449z1, nx59446z1, nx60443z1;
+# Info:     OBUF \HEX0_obuf(0)  (.O (HEX0[0]), .I (nx60443z1)) ;
+# Info:     OBUF \HEX0_obuf(1)  (.O (HEX0[1]), .I (nx59446z1)) ;
+# Info:     OBUF \HEX0_obuf(2)  (.O (HEX0[2]), .I (nx58449z1)) ;
+# Info:     OBUF \HEX0_obuf(3)  (.O (HEX0[3]), .I (nx57452z1)) ;
+# Info:     OBUF \HEX0_obuf(4)  (.O (HEX0[4]), .I (nx56455z1)) ;
+# Info:     OBUF \HEX0_obuf(5)  (.O (HEX0[5]), .I (nx55458z1)) ;
+# Info:     OBUF \HEX0_obuf(6)  (.O (HEX0[6]), .I (nx54461z1)) ;
+# Info:     IBUF reset_ibuf (.O (reset_int), .I (reset)) ;
+# Info:     IBUF enable_ibuf (.O (enable_int), .I (enable)) ;
+# Info:     FDPE \reg_down_counter(0)  (.Q (down_counter_value[0]), .C (clk_int), .CE (
+# Info:          enable_int), .D (nx34263z1), .PRE (not_reset)) ;
+# Info:     FDCE \reg_down_counter(1)  (.Q (down_counter_value[1]), .C (clk_int), .CE (
+# Info:          enable_int), .CLR (not_reset), .D (nx33266z1)) ;
+# Info:     FDCE \reg_down_counter(2)  (.Q (down_counter_value[2]), .C (clk_int), .CE (
+# Info:          enable_int), .CLR (not_reset), .D (nx32269z1)) ;
+# Info:     FDPE \reg_down_counter(3)  (.Q (down_counter_value[3]), .C (clk_int), .CE (
+# Info:          enable_int), .D (nx31272z1), .PRE (not_reset)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDCE \modgen_counter_four_bits_count_reg_q(2)  (.Q (four_bits_count[2]), .C (
+# Info:          clk_int), .CE (nx31013z1), .CLR (not_reset), .D (nx31013z2)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDCE \modgen_counter_four_bits_count_reg_q(1)  (.Q (four_bits_count[1]), .C (
+# Info:          clk_int), .CE (nx31013z1), .CLR (not_reset), .D (nx30016z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDCE \modgen_counter_four_bits_count_reg_q(0)  (.Q (four_bits_count[0]), .C (
+# Info:          clk_int), .CE (nx31013z1), .CLR (not_reset), .D (nx29019z1)) ;
+# Info:     INV ix32269z1315 (.O (not_reset), .I (reset_int)) ;
+# Info:     INV ix34263z1315 (.O (nx34263z1), .I (down_counter_value[0])) ;
+# Info:     INV ix29019z1315 (.O (nx29019z1), .I (four_bits_count[0])) ;
+# Info:     LUT2 ix30016z1320 (.O (nx30016z1), .I0 (four_bits_count[1]), .I1 (
+# Info:          four_bits_count[0])) ;
+# Info:          defparam ix30016z1320.INIT = 4'h6;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT3 ix31013z1421 (.O (nx31013z2), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix31013z1421.INIT = 8'h6A;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT4 ix31272z45003 (.O (nx31272z1), .I0 (down_counter_value[3]), .I1 (
+# Info:          down_counter_value[2]), .I2 (down_counter_value[1]), .I3 (
+# Info:          down_counter_value[0])) ;
+# Info:          defparam ix31272z45003.INIT = 16'hAAA9;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT4 ix32269z53733 (.O (nx32269z1), .I0 (down_counter_value[3]), .I1 (
+# Info:          down_counter_value[2]), .I2 (down_counter_value[1]), .I3 (
+# Info:          down_counter_value[0])) ;
+# Info:          defparam ix32269z53733.INIT = 16'hCCC2;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT4 ix33266z62768 (.O (nx33266z1), .I0 (down_counter_value[3]), .I1 (
+# Info:          down_counter_value[2]), .I2 (down_counter_value[1]), .I3 (
+# Info:          down_counter_value[0])) ;
+# Info:          defparam ix33266z62768.INIT = 16'hF00E;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT3 ix56455z1556 (.O (nx56455z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix56455z1556.INIT = 8'hF2;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT3 ix57452z1460 (.O (nx57452z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix57452z1460.INIT = 8'h92;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT4 ix31013z1315 (.O (nx31013z1), .I0 (down_counter_value[3]), .I1 (
+# Info:          down_counter_value[2]), .I2 (down_counter_value[1]), .I3 (
+# Info:          down_counter_value[0])) ;
+# Info:          defparam ix31013z1315.INIT = 16'h0001;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT3 ix54461z1459 (.O (nx54461z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix54461z1459.INIT = 8'h91;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT3 ix55458z1526 (.O (nx55458z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix55458z1526.INIT = 8'hD4;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT3 ix58449z1318 (.O (nx58449z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix58449z1318.INIT = 8'h04;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT3 ix59446z1354 (.O (nx59446z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix59446z1354.INIT = 8'h28;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT3 ix60443z1332 (.O (nx60443z1), .I0 (four_bits_count[2]), .I1 (
+# Info:          four_bits_count[1]), .I2 (four_bits_count[0])) ;
+# Info:          defparam ix60443z1332.INIT = 8'h12;
+# Info:     BUFGP clk_ibuf (.O (clk_int), .I (clk)) ;
+# Info: endmodule
+Done
