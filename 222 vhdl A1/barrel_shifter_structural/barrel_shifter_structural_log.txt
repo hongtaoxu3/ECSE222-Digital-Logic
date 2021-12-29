@@ -1,0 +1,180 @@
+[2020-09-25 06:28:47 EDT] precision -shell -file run.do -fileargs "barrel_shifter_structural.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@41792c9dc1f4 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Fri Sep 25 06:28:48 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/barrel_shifter_structural.vhd" ...
+# Info: [669]: Top module of the design is set to: barrel_shifter_structural.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.barrel_shifter_structural(Structural): Pre-processing...
+# Info: [44523]: Root Module work.barrel_shifter_structural(Structural): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 20.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.barrel_shifter_structural.Structural
+# Info: [15002]: Optimizing design view:.work.barrel_shifter_structural.Structural
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: /home/runner/impl_1/barrel_shifter_structural.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/barrel_shifter_structural.xdc.
+# Info: -- Writing file /home/runner/impl_1/barrel_shifter_structural.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/barrel_shifter_structural.v.
+# Info: -- Writing file /home/runner/impl_1/barrel_shifter_structural.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.3 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.4 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/barrel_shifter_structural.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: --------------------------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/barrel_shifter_structural_area.rep
+# Info: 1               /home/runner/impl_1/barrel_shifter_structural_con_rep.sdc
+# Info: 2               /home/runner/impl_1/barrel_shifter_structural_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/barrel_shifter_structural_fsm.rep
+# Info: 4               /home/runner/impl_1/barrel_shifter_structural_env.htm
+# Info: 5               /home/runner/impl_1/barrel_shifter_structural.edf
+# Info: 6               /home/runner/impl_1/barrel_shifter_structural.v
+# Info: 7               /home/runner/impl_1/barrel_shifter_structural.xdc
+# Info: 8               /home/runner/impl_1/barrel_shifter_structural.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               10      210       4.76%
+# Info: Global Buffers                    0       32        0.00%
+# Info: LUTs                              4       63400     0.01%
+# Info: CLB Slices                        1       15850     0.01%
+# Info: Dffs or Latches                   0       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: ******************************************************************************
+# Info: Library: work    Cell: barrel_shifter_structural    View: Structural
+# Info: ******************************************************************************
+# Info:  Number of ports :                           10
+# Info:  Number of nets :                            20
+# Info:  Number of instances :                       14
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of LUTs :                             4
+# Info:  Number of accumulated instances :           14
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.barrel_shifter_structural.Structural
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | Port      | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | X(3)      | Input     |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | X(2)      | Input     |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | X(1)      | Input     |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | X(0)      | Input     |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | sel(1)    | Input     |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | sel(0)    | Input     |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | Y(3)      | Output    |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | Y(2)      | Output    |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | Y(1)      | Output    |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: | Y(0)      | Output    |          |          |          |
+# Info: +-----------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell barrel_shifter_structural,
+# Info: // Fri Sep 25 06:28:53 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module barrel_shifter_structural ( X, sel, Y ) ;
+# Info:     input [3:0]X ;
+# Info:     input [1:0]sel ;
+# Info:     output [3:0]Y ;
+# Info:     wire [3:0]X_int;
+# Info:     wire [1:0]sel_int;
+# Info:     wire nx12576z1, nx13573z1, nx14570z1, nx15567z1;
+# Info:     OBUF \Y_obuf(0)  (.O (Y[0]), .I (nx15567z1)) ;
+# Info:     OBUF \Y_obuf(1)  (.O (Y[1]), .I (nx14570z1)) ;
+# Info:     OBUF \Y_obuf(2)  (.O (Y[2]), .I (nx13573z1)) ;
+# Info:     OBUF \Y_obuf(3)  (.O (Y[3]), .I (nx12576z1)) ;
+# Info:     IBUF \sel_ibuf(0)  (.O (sel_int[0]), .I (sel[0])) ;
+# Info:     IBUF \sel_ibuf(1)  (.O (sel_int[1]), .I (sel[1])) ;
+# Info:     IBUF \X_ibuf(0)  (.O (X_int[0]), .I (X[0])) ;
+# Info:     IBUF \X_ibuf(1)  (.O (X_int[1]), .I (X[1])) ;
+# Info:     IBUF \X_ibuf(2)  (.O (X_int[2]), .I (X[2])) ;
+# Info:     IBUF \X_ibuf(3)  (.O (X_int[3]), .I (X[3])) ;
+# Info:     LUT6 ix12576z45004 (.O (nx12576z1), .I0 (X_int[3]), .I1 (X_int[2]), .I2 (
+# Info:          X_int[1]), .I3 (X_int[0]), .I4 (sel_int[1]), .I5 (sel_int[0])) ;
+# Info:          defparam ix12576z45004.INIT = 64'hFF00CCCCF0F0AAAA;
+# Info:     LUT6 ix13573z53742 (.O (nx13573z1), .I0 (X_int[3]), .I1 (X_int[2]), .I2 (
+# Info:          X_int[1]), .I3 (X_int[0]), .I4 (sel_int[1]), .I5 (sel_int[0])) ;
+# Info:          defparam ix13573z53742.INIT = 64'hAAAAF0F0FF00CCCC;
+# Info:     LUT6 ix14570z62994 (.O (nx14570z1), .I0 (X_int[3]), .I1 (X_int[2]), .I2 (
+# Info:          X_int[1]), .I3 (X_int[0]), .I4 (sel_int[1]), .I5 (sel_int[0])) ;
+# Info:          defparam ix14570z62994.INIT = 64'hCCCCFF00AAAAF0F0;
+# Info:     LUT6 ix15567z1058 (.O (nx15567z1), .I0 (X_int[3]), .I1 (X_int[2]), .I2 (
+# Info:          X_int[1]), .I3 (X_int[0]), .I4 (sel_int[1]), .I5 (sel_int[0])) ;
+# Info:          defparam ix15567z1058.INIT = 64'hF0F0AAAACCCCFF00;
+# Info: endmodule
+Done
