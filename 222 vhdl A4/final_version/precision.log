@@ -1,0 +1,207 @@
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@1081d2b9f7d0 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Fri Nov  6 16:31:58 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Info: [669]: Top module of the design is set to: four_bit_comparator.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.four_bit_comparator(behavioral): Pre-processing...
+# Info: [44523]: Root Module work.four_bit_comparator(behavioral): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 65.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.four_bit_comparator.behavioral
+# Info: [15002]: Optimizing design view:.work.four_bit_comparator.behavioral
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: /home/runner/impl_1/four_bit_comparator.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/four_bit_comparator.xdc.
+# Info: -- Writing file /home/runner/impl_1/four_bit_comparator.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/four_bit_comparator.v.
+# Info: -- Writing file /home/runner/impl_1/four_bit_comparator.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.5 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.6 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/four_bit_comparator.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: --------------------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/four_bit_comparator_area.rep
+# Info: 1               /home/runner/impl_1/four_bit_comparator_con_rep.sdc
+# Info: 2               /home/runner/impl_1/four_bit_comparator_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/four_bit_comparator_fsm.rep
+# Info: 4               /home/runner/impl_1/four_bit_comparator_env.htm
+# Info: 5               /home/runner/impl_1/four_bit_comparator.edf
+# Info: 6               /home/runner/impl_1/four_bit_comparator.v
+# Info: 7               /home/runner/impl_1/four_bit_comparator.xdc
+# Info: 8               /home/runner/impl_1/four_bit_comparator.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               14      210       6.67%
+# Info: Global Buffers                    0       32        0.00%
+# Info: LUTs                              9       63400     0.01%
+# Info: CLB Slices                        3       15850     0.02%
+# Info: Dffs or Latches                   0       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: ************************************************************************
+# Info: Library: work    Cell: four_bit_comparator    View: behavioral
+# Info: ************************************************************************
+# Info:  Number of ports :                           14
+# Info:  Number of nets :                            31
+# Info:  Number of instances :                       23
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of LUTs :                             9
+# Info:  Number of accumulated instances :           23
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.four_bit_comparator.behavioral
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | Port            | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | A(3)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | A(2)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | A(1)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | A(0)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | B(3)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | B(2)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | B(1)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | B(0)            | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | AgtBplusOne     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | AgteBplusOne    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | AltBplusOne     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | AlteBplusOne    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | AeqBplusOne     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | Overflow        | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell four_bit_comparator,
+# Info: // Fri Nov  6 16:32:04 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module four_bit_comparator ( A, B, AgtBplusOne, AgteBplusOne, AltBplusOne,
+# Info:                              AlteBplusOne, AeqBplusOne, Overflow ) ;
+# Info:     input [3:0]A ;
+# Info:     input [3:0]B ;
+# Info:     output AgtBplusOne ;
+# Info:     output AgteBplusOne ;
+# Info:     output AltBplusOne ;
+# Info:     output AlteBplusOne ;
+# Info:     output AeqBplusOne ;
+# Info:     output Overflow ;
+# Info:     wire [3:0]A_int;
+# Info:     wire [3:0]B_int;
+# Info:     wire nx53065z1, nx11232z1, nx2428z1, nx11232z2, nx54399z1, nx53065z2,
+# Info:          nx14982z1, nx14982z2, nx59395z1;
+# Info:     OBUF Overflow_obuf (.O (Overflow), .I (nx59395z1)) ;
+# Info:     OBUF AeqBplusOne_obuf (.O (AeqBplusOne), .I (nx14982z1)) ;
+# Info:     OBUF AlteBplusOne_obuf (.O (AlteBplusOne), .I (nx54399z1)) ;
+# Info:     OBUF AltBplusOne_obuf (.O (AltBplusOne), .I (nx2428z1)) ;
+# Info:     OBUF AgteBplusOne_obuf (.O (AgteBplusOne), .I (nx11232z1)) ;
+# Info:     OBUF AgtBplusOne_obuf (.O (AgtBplusOne), .I (nx53065z1)) ;
+# Info:     IBUF \B_ibuf(0)  (.O (B_int[0]), .I (B[0])) ;
+# Info:     IBUF \B_ibuf(1)  (.O (B_int[1]), .I (B[1])) ;
+# Info:     IBUF \B_ibuf(2)  (.O (B_int[2]), .I (B[2])) ;
+# Info:     IBUF \B_ibuf(3)  (.O (B_int[3]), .I (B[3])) ;
+# Info:     IBUF \A_ibuf(0)  (.O (A_int[0]), .I (A[0])) ;
+# Info:     IBUF \A_ibuf(1)  (.O (A_int[1]), .I (A[1])) ;
+# Info:     IBUF \A_ibuf(2)  (.O (A_int[2]), .I (A[2])) ;
+# Info:     IBUF \A_ibuf(3)  (.O (A_int[3]), .I (A[3])) ;
+# Info:     LUT6 ix53065z10052 (.O (nx53065z1), .I0 (A_int[3]), .I1 (B_int[3]), .I2 (
+# Info:          B_int[2]), .I3 (B_int[1]), .I4 (B_int[0]), .I5 (nx53065z2)) ;
+# Info:          defparam ix53065z10052.INIT = 64'h2BBBBBBB02222222;
+# Info:     LUT6 ix11232z49373 (.O (nx11232z1), .I0 (A_int[3]), .I1 (B_int[3]), .I2 (
+# Info:          B_int[2]), .I3 (B_int[1]), .I4 (B_int[0]), .I5 (nx11232z2)) ;
+# Info:          defparam ix11232z49373.INIT = 64'h222222222BBBBBBB;
+# Info:     LUT6 ix2428z18790 (.O (nx2428z1), .I0 (A_int[3]), .I1 (B_int[3]), .I2 (
+# Info:          B_int[2]), .I3 (B_int[1]), .I4 (B_int[0]), .I5 (nx11232z2)) ;
+# Info:          defparam ix2428z18790.INIT = 64'h7DDDDDDD14444444;
+# Info:     LUT6 ix11232z23588 (.O (nx11232z2), .I0 (A_int[2]), .I1 (A_int[1]), .I2 (
+# Info:          A_int[0]), .I3 (B_int[2]), .I4 (B_int[1]), .I5 (B_int[0])) ;
+# Info:          defparam ix11232z23588.INIT = 64'h005577117F155701;
+# Info:     LUT6 ix54399z58111 (.O (nx54399z1), .I0 (A_int[3]), .I1 (B_int[3]), .I2 (
+# Info:          B_int[2]), .I3 (B_int[1]), .I4 (B_int[0]), .I5 (nx53065z2)) ;
+# Info:          defparam ix54399z58111.INIT = 64'h144444443DDDDDDD;
+# Info:     LUT6 ix53065z36369 (.O (nx53065z2), .I0 (A_int[2]), .I1 (A_int[1]), .I2 (
+# Info:          A_int[0]), .I3 (B_int[2]), .I4 (B_int[1]), .I5 (B_int[0])) ;
+# Info:          defparam ix53065z36369.INIT = 64'hFEA880EA00AA88EE;
+# Info:     LUT6 ix14982z1314 (.O (nx14982z1), .I0 (A_int[3]), .I1 (B_int[3]), .I2 (
+# Info:          B_int[2]), .I3 (B_int[1]), .I4 (B_int[0]), .I5 (nx14982z2)) ;
+# Info:          defparam ix14982z1314.INIT = 64'h2999999900000000;
+# Info:     LUT6 ix14982z9523 (.O (nx14982z2), .I0 (A_int[2]), .I1 (A_int[1]), .I2 (
+# Info:          A_int[0]), .I3 (B_int[2]), .I4 (B_int[1]), .I5 (B_int[0])) ;
+# Info:          defparam ix14982z9523.INIT = 64'h0102080480402010;
+# Info:     LUT4 ix59395z34082 (.O (nx59395z1), .I0 (B_int[3]), .I1 (B_int[2]), .I2 (
+# Info:          B_int[1]), .I3 (B_int[0])) ;
+# Info:          defparam ix59395z34082.INIT = 16'h8000;
+# Info: endmodule
