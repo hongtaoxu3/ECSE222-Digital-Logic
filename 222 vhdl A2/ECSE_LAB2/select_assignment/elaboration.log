@@ -1,0 +1,35 @@
+Riviera-PRO 2020.04.130.7729(Linux64) 2020-10-09 14:05:48
+
+Elaboration top modules:
+Architecture                  tb(testbench)
+
+
+------------------------------------------------------------------------------------------------
+Entity            | Architecture | Library | Info | Compiler Version      | Compilation Options
+------------------------------------------------------------------------------------------------
+testbench         | tb           | work    |      | 2020.04.130 (Linux64) |  -2008
+select_assignment | Behavioral   | work    |      | 2020.04.130 (Linux64) |  -2008
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+VHDL Package                     | Library | Info | Compiler Version      | Compilation Options
+------------------------------------------------------------------------------------------------
+standard                         | std     |      |                       | <unavailable>
+TEXTIO                           | std     |      |                       | <unavailable>
+std_logic_1164                   | ieee    |      |                       | <unavailable>
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+Library                          | Comment
+------------------------------------------------------------------------------------------------
+ieee                             | Standard IEEE packages library
+std                              | Standard VHDL library
+work                             | None
+------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim testbench
+
+License to run VHDL performance optimized simulation unavailable.
+
+The performance of simulation is reduced. Version EDU Edition

@@ -1,0 +1,165 @@
+[2020-10-03 09:27:18 EDT] precision -shell -file run.do -fileargs "can_POS.vhd design.vhd"  
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@7182e46e3a65 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Sat Oct  3 09:27:18 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2019b.10
+# Warning: [40000]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Warning: [40000]: No design unit found in file "/home/runner/design.vhd". File not considered in ordering and kept at the top half of ordering output file list.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42502]: Analyzing input file "/home/runner/design.vhd" ...
+# Warning: [43020]: "/home/runner/design.vhd", line 1: near 'EOF': No design unit found.
+# Info: [42502]: Analyzing input file "/home/runner/can_POS.vhd" ...
+# Info: [669]: Top module of the design is set to: can_POS.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.can_POS(direct_assignment): Pre-processing...
+# Info: [44523]: Root Module work.can_POS(direct_assignment): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 17.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.can_POS.direct_assignment
+# Info: [15002]: Optimizing design view:.work.can_POS.direct_assignment
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: /home/runner/impl_1/can_POS.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/can_POS.xdc.
+# Info: -- Writing file /home/runner/impl_1/can_POS.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/can_POS.v.
+# Info: -- Writing file /home/runner/impl_1/can_POS.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.4 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.5 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/can_POS.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: --------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/can_POS_area.rep
+# Info: 1               /home/runner/impl_1/can_POS_con_rep.sdc
+# Info: 2               /home/runner/impl_1/can_POS_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/can_POS_fsm.rep
+# Info: 4               /home/runner/impl_1/can_POS_env.htm
+# Info: 5               /home/runner/impl_1/can_POS.edf
+# Info: 6               /home/runner/impl_1/can_POS.v
+# Info: 7               /home/runner/impl_1/can_POS.xdc
+# Info: 8               /home/runner/impl_1/can_POS.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               6       210       2.86%
+# Info: Global Buffers                    0       32        0.00%
+# Info: LUTs                              2       63400     0.00%
+# Info: CLB Slices                        0       15850     0.00%
+# Info: Dffs or Latches                   0       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: *******************************************************************
+# Info: Library: work    Cell: can_POS    View: direct_assignment
+# Info: *******************************************************************
+# Info:  Number of ports :                            6
+# Info:  Number of nets :                            12
+# Info:  Number of instances :                        8
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of LUTs :                             2
+# Info:  Number of LUTs with LUTNM/HLUTNM :           2
+# Info:  Number of accumulated instances :            8
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.can_POS.direct_assignment
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | Port  | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | x1    | Input     |          |          |          |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | x2    | Input     |          |          |          |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | x3    | Input     |          |          |          |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | x4    | Input     |          |          |          |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | f1    | Output    |          |          |          |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: | f2    | Output    |          |          |          |
+# Info: +-------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //
+# Info: // Verilog description for cell can_POS,
+# Info: // Sat Oct  3 09:27:25 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module can_POS ( x1, x2, x3, x4, f1, f2 ) ;
+# Info:     input x1 ;
+# Info:     input x2 ;
+# Info:     input x3 ;
+# Info:     input x4 ;
+# Info:     output f1 ;
+# Info:     output f2 ;
+# Info:     wire x1_int, x2_int, x3_int, x4_int, nx23486z1, nx49837z1;
+# Info:     OBUF f2_obuf (.O (f2), .I (nx49837z1)) ;
+# Info:     OBUF f1_obuf (.O (f1), .I (nx23486z1)) ;
+# Info:     IBUF x4_ibuf (.O (x4_int), .I (x4)) ;
+# Info:     IBUF x3_ibuf (.O (x3_int), .I (x3)) ;
+# Info:     IBUF x2_ibuf (.O (x2_int), .I (x2)) ;
+# Info:     IBUF x1_ibuf (.O (x1_int), .I (x1)) ;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT4 ix23486z51751 (.O (nx23486z1), .I0 (x1_int), .I1 (x2_int), .I2 (x3_int)
+# Info:          , .I3 (x4_int)) ;
+# Info:          defparam ix23486z51751.INIT = 16'hC505;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT3 ix49837z1510 (.O (nx49837z1), .I0 (x2_int), .I1 (x3_int), .I2 (x4_int)
+# Info:          ) ;
+# Info:          defparam ix49837z1510.INIT = 8'hC4;
+# Info: endmodule
